@@ -1,0 +1,31 @@
+NAME
+	Rate
+
+DESCRIPTION
+	Rate excutes some funcions by specified rate.
+
+CONSTRUCTER
+	ins = new Rate(num maxRate);
+	maxRate :the maximum of probability.
+		 Default 100
+		 type 'number'
+METHODS
+	ins.add(num rate or str 'default',func function)
+		 add rate and function to setValues.
+		 'default' must be defined.
+		 The summention of all registered rates cannot exceed max rate.
+	ins.generate()
+		 execute each methods by its rates.
+	ins.clear()
+		 initialize all registered values and functions.
+EXAMPLES
+	var rate = new Rate(100);//max rate
+	rate.add(0.1,func1()); //0.1%
+	rate.add( 2,func2()); //2%
+	rate.add('default',funcDefault()); //97.9%
+	var result = rate.generate(); //return the result of executing funcDefault or func1 or func2
+
+AUTHOR
+	Yuhei Nakasaka <Twitter:@razokulover> 
+LICENSE
+	ぼくとせかいのみんなで好き放題
