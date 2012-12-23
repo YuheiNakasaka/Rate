@@ -1,5 +1,5 @@
 ;
-Rate(initValue){
+function Rate(initValue){
 	//init
 	this.maxRate = initValue === undefined ? 100 : initValue;
 	this.setValues = []; 
