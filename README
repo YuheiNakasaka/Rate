@@ -2,7 +2,7 @@ NAME
 	Rate
 
 DESCRIPTION
-	Rate excutes some funcions by specified rate.
+	Rate executes some funcions by specified rate.
 
 CONSTRUCTER
 	ins = new Rate(num maxRate);
